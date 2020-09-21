@@ -683,6 +683,7 @@ template {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    margin-left: 0;
   }
 }
 
