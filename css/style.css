@@ -597,6 +597,8 @@ template {
   height: 450px;
   position: relative;
   border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-container::after {
@@ -615,6 +617,8 @@ template {
 
 .slider {
   width: 728px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slider-button {
