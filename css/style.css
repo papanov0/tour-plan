@@ -890,6 +890,11 @@ template {
   cursor: pointer;
 }
 
+.parallax-window {
+  min-height: 300px;
+  background: transparent;
+}
+
 .reviews {
   padding: 40px 70px 0;
 }
@@ -1097,6 +1102,13 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .parallax-window {
+    background-image: url(../img/newsletter-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
   }
 }
 

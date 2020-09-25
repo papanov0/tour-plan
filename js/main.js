@@ -26,3 +26,8 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   },
 });
 
+$(window).resize(function () {
+  if($(window).width() >= 768){
+      $('.newsletter').removeClass('parallax-window');
+  };
+})
