@@ -1241,5 +1241,18 @@ template {
     font-size: 30px;
     line-height: 38px;
   }
+  .reviews {
+    padding: 40px 20px 0;
+  }
+  .reviews-slider__item {
+    padding: 0 0 10px 0;
+  }
+  .reviews-slider__text {
+    width: 90%;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
