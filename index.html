@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -23,7 +23,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -34,7 +37,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -54,6 +57,34 @@
       <nav class="nav navbar-button">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile--visible"
+              >
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--light"> Nathan </span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link"> All Deals </a>
             </li>
@@ -209,7 +240,7 @@
     <section
       class="newsletter parallax-window"
       data-parallax="scroll"
-      data-image-src="../img/newsletter-bg.jpg"
+      data-image-src="img/newsletter-bg.jpg"
     >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
@@ -287,38 +318,22 @@
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
           <div class="card activities__card">
-            <img
-              class="card__img"
-              src="img/activity-1.jpg"
-              alt=""
-            />
+            <img class="card__img" src="img/activity-1.jpg" alt="" />
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
           <div class="card activities__card">
-            <img
-              class="card__img"
-              src="img/activity-2.jpg"
-              alt=""
-            />
+            <img class="card__img" src="img/activity-2.jpg" alt="" />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
           <div class="card activities__card">
-            <img
-              class="card__img"
-              src="img/activity-3.jpg"
-              alt=""
-            />
+            <img class="card__img" src="img/activity-3.jpg" alt="" />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
           <div class="card activities__card">
-            <img
-              class="card__img"
-              src="img/activity-4.jpg"
-              alt=""
-            />
+            <img class="card__img" src="img/activity-4.jpg" alt="" />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
           </div>
@@ -491,7 +506,7 @@
           </div>
           <!-- /.footer__policy-text -->
           <div class="footer__policy-icon">
-            <img src="img/sponsor.png" alt="">
+            <img src="img/sponsor.png" alt="" />
           </div>
           <!-- /.policy-icon -->
         </div>
