@@ -56,7 +56,9 @@ else {$result = "error";}
 header('Location: thanksyou.html');
 
 
-
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $email = $_POST['email'];
