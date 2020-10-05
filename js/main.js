@@ -51,5 +51,39 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   }
 
-  
+  var elements = $('.modal__overlay');
+
+  $('[data-toggle=modal]').click(function(){
+      elements.addClass('modal__overlay--visible');
+      $(document).on('keydown', function(e){
+        if(e.which === 27){ // key = esc (27)
+            elements.removeClass('modal__overlay--visible');
+            var home = $.Event("keydown", {keyCode: 36}); //
+            $(document).trigger(home);
+            e.preventDefault();
+            return false;
+        }
+    });
+  });
+
+  $('.modal__clouse').click(function(){
+      elements.removeClass('modal__overlay--visible');
+  });
+
+  //обработка форм
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: "Please specify your name",
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "phone is must have"
+        },
+      },
+  });
+  })
 });
