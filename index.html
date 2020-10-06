@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css">
   </head>
   <body>
     <header class="navbar navbar--fixed">
@@ -95,7 +96,7 @@
               <a href="#" class="navbar-menu__link"> Activities </a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link"> Day </a>
+              <a href="#" class="navbar-menu__link"> Hotel Day Packages </a>
             </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link"> Restaurants </a>
@@ -104,7 +105,7 @@
               <a href="#" class="navbar-menu__link"> Events </a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link"> Rodrigues F</a>
+              <a href="#" class="navbar-menu__link"> Rodrigues </a>
             </li>
           </ul>
         </div>
@@ -244,8 +245,8 @@
       data-parallax="scroll"
       data-image-src="img/newsletter-bg.jpg"
     >
-      <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+      <div class="newsletter-wrapper" >
+        <h2 class="newsletter-title newsletter__title" data-aos="fade-right" data-aos-duration="500">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -253,6 +254,8 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
+          data-aos="fade-left"
+          data-aos-duration="500"
         >
           <input
             type="email"
@@ -270,7 +273,7 @@
     <section class="reviews">
       <div class="cotainer">
         <h2 class="section-title reviews__title">
-          What people thinks about us
+          What people think about us
         </h2>
         <div class="swiper-container reviews-slider">
           <!-- Additional required wrapper -->
@@ -325,25 +328,25 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-right" data-aos-duration="500">
             <img class="card__img" src="img/activity-1.jpg" alt="" />
-            <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <h3 class="card__title card__title--corner">The curious corner of chamarel</h3>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-zoom-in" data-aos-delay="300">
             <img class="card__img" src="img/activity-2.jpg" alt="" />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-zoom-in" data-aos-delay="300">
             <img class="card__img" src="img/activity-3.jpg" alt="" />
-            <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <h3 class="card__title card__title--trip">Tamarind falls hiking trip - full day</h3>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-left" data-aos-duration="500">
             <img class="card__img" src="img/activity-4.jpg" alt="" />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
         </div>
         <!-- /.activities-wrapper -->
@@ -579,6 +582,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>

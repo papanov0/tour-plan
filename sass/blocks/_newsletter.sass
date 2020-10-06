@@ -1,10 +1,7 @@
 .newsletter
   position: relative
-  padding: 98px 0 87px 0
-  background-image: url(../img/newsletter-bg.jpg)
-  background-position: center 
-  background-repeat: no-repeat
-  background-size: cover
+  padding: 77px 0 87px 0
+  max-height: 258px
   &::after
     content: ''
     position: absolute
@@ -15,7 +12,7 @@
     width: 100%
     height: 100%
     background-color: rgba($dark, 0.8)
-  &-wrapper 
+  &-wrapper
     position: relative
     display: flex
     align-items: center
@@ -25,21 +22,21 @@
     margin: auto
   &-title
     color: $light
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
+    font-style: normal
+    font-weight: 300
+    font-size: 24px
+    line-height: 30px
     &__strong
-      font-style: normal;
-      font-weight: 600;
-      font-size: 36px;
-      line-height: 45px;
-      text-transform: uppercase;
+      font-style: normal
+      font-weight: 600
+      font-size: 36px
+      line-height: 45px
+      text-transform: uppercase
       display: block
 .subscribe
   position: relative
   width: 350px
-  height: 50px
+  height: 54px
   border-radius: 4px
   overflow: hidden
   &__input
@@ -49,13 +46,15 @@
     border: none
     padding-left: 33px
     padding-right: 75px
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-  &__button 
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 18px
+    color: $footer-text-color
+    
+  &__button
     position: absolute
-    min-width: 60px
+    min-width: 64px
     right: 0
     top: 0
     height: 100%
@@ -63,11 +62,11 @@
     background-color: $primary
     color: $light
     cursor: pointer
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
 
-.parallax-window 
-  min-height: 300px
+.parallax-window
+  min-height: 230px
   background: transparent
-
-
-
-

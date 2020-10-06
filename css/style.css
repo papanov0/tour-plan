@@ -423,7 +423,10 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
   padding-bottom: 40px;
 }
 
@@ -552,8 +555,8 @@ template {
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
-  margin-right: 4px;
-  margin-left: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
 .breadcrumb-list__link {
@@ -562,7 +565,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 15px;
   padding-bottom: 70px;
 }
 
@@ -590,7 +593,7 @@ template {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .hotel-name {
@@ -765,7 +768,7 @@ template {
 .booking__pricetag {
   font-weight: 800;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 28px;
 }
 
 .booking__perroom {
@@ -775,7 +778,10 @@ template {
 }
 
 .booking__room {
-  margin-top: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .booking__text {
@@ -844,7 +850,7 @@ template {
   min-height: 45px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 0;
   border-radius: 4px;
   background-color: #EC1F46;
   border: none;
@@ -859,13 +865,14 @@ template {
   overflow: hidden;
 }
 
+.swiper-container {
+  margin-left: 0;
+}
+
 .newsletter {
   position: relative;
-  padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 77px 0 87px 0;
+  max-height: 258px;
 }
 
 .newsletter::after {
@@ -916,7 +923,7 @@ template {
 .subscribe {
   position: relative;
   width: 350px;
-  height: 50px;
+  height: 54px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -932,11 +939,12 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  color: #BDBDBD;
 }
 
 .subscribe__button {
   position: absolute;
-  min-width: 60px;
+  min-width: 64px;
   right: 0;
   top: 0;
   height: 100%;
@@ -944,10 +952,14 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
   cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .parallax-window {
-  min-height: 300px;
+  min-height: 230px;
   background: transparent;
 }
 
@@ -962,7 +974,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin: 0 auto 70px auto;
 }
 
 .reviews-slider__item {
@@ -1009,8 +1021,8 @@ template {
 .reviews-slider__button {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -1024,12 +1036,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arow-prev-secondary.svg);
-  left: 0;
+  left: 19.5%;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arow-next-secondary.svg);
-  right: 0;
+  right: 19.5%;
 }
 
 .reviews-slider__profile {
@@ -1062,7 +1074,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
 }
 
 .reviews-slider__date {
@@ -1090,7 +1102,7 @@ template {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 113px 0 98px 0;
 }
 
 .activities__title {
@@ -1162,6 +1174,14 @@ template {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.card__title--trip {
+  max-width: 161px;
+}
+
+.card__title--corner {
+  max-width: 145px;
 }
 
 .card__button {
