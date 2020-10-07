@@ -91,5 +91,10 @@ $(document).ready(function () {
     $('.form__phone').mask('+0(000) 000-00-00');
   });
 
-  AOS.init();
+  AOS.init({
+    disable: function () {
+      var maxWidth = 992;
+      return window.innerWidth < maxWidth;
+    }
+  });
 });

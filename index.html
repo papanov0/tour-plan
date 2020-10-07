@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan — Hotel Booking</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css" />
   </head>
   <body>
     <header class="navbar navbar--fixed">
@@ -89,7 +90,7 @@
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link"> All Deals </a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--visible">
               <a href="#" class="navbar-menu__link"> Hotels </a>
             </li>
             <li class="navbar-menu__item">
@@ -245,8 +246,12 @@
       data-parallax="scroll"
       data-image-src="img/newsletter-bg.jpg"
     >
-      <div class="newsletter-wrapper" >
-        <h2 class="newsletter-title newsletter__title" data-aos="fade-right" data-aos-duration="500">
+      <div class="newsletter-wrapper">
+        <h2
+          class="newsletter-title newsletter__title"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -272,9 +277,7 @@
     <!-- /.newsletter -->
     <section class="reviews">
       <div class="cotainer">
-        <h2 class="section-title reviews__title">
-          What people think about us
-        </h2>
+        <h2 class="section-title reviews__title">What people think about us</h2>
         <div class="swiper-container reviews-slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -328,24 +331,44 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card" data-aos="fade-right" data-aos-duration="500">
+          <div
+            class="card activities__card activities__card--order-1"
+            data-aos="zoom-in-down"
+            data-aos-duration="500"
+          >
             <img class="card__img" src="img/activity-1.jpg" alt="" />
-            <h3 class="card__title card__title--corner">The curious corner of chamarel</h3>
+            <h3 class="card__title card__title--corner">
+              The curious corner of chamarel
+            </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card" data-aos="fade-zoom-in" data-aos-delay="300">
+          <div
+            class="card activities__card activities__card--order-2"
+            data-aos="zoom-in-down"
+            data-aos-delay="300"
+          >
             <img class="card__img" src="img/activity-2.jpg" alt="" />
-            <h3 class="card__title">Gymkhana club golf course</h3>
+            <h3 class="card__title card__title--golf">Gymkhana club golf course</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card" data-aos="fade-zoom-in" data-aos-delay="300">
+          <div
+            class="card activities__card activities__card--order-3"
+            data-aos="zoom-in-down"
+            data-aos-delay="300"
+          >
             <img class="card__img" src="img/activity-3.jpg" alt="" />
-            <h3 class="card__title card__title--trip">Tamarind falls hiking trip - full day</h3>
+            <h3 class="card__title card__title--trip">
+              Tamarind falls hiking trip - full day
+            </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card" data-aos="fade-left" data-aos-duration="500">
+          <div
+            class="card activities__card activities__card--order-4"
+            data-aos="zoom-in-down"
+            data-aos-duration="500"
+          >
             <img class="card__img" src="img/activity-4.jpg" alt="" />
-            <h3 class="card__title">The blue marine discovery quest</h3>
+            <h3 class="card__title card__title--discovery">The blue marine discovery quest</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
         </div>
@@ -395,7 +418,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__list footer__additional">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+            <h3 class="footer__title footer__title--additional">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us </a>
@@ -437,8 +460,8 @@
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__title">LEGAL INFORMATION</h3>
-            <ul class="footer__ul">
+            <h3 class="footer__title footer__title--size">LEGAL INFORMATION</h3>
+            <ul class="footer__ul footer__ul--legal">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions</a>
               </li>
@@ -471,9 +494,9 @@
                 <div class="footer__icon-wrapper">
                   <img src="img/phone.svg" alt="" class="footer__icon" />
                 </div>
-                Tel (business hours) : 269 1500 Tel (hotline) Monday - Saturday:
-                52-56-61-38 (08:00 am – 20:00 pm) Tel (hotline) Sunday:
-                52-56-61-38 (08:00 am – 14:00 pm)
+                <p class="footer__item-text">Tel (business hours) : 269 1500
+Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)
+Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -485,7 +508,7 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
             <form action="send.php" method="POST" class="form footer__form">
               <div class="footer__input-group">
                 <input
