@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan — Hotel Booking</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -17,7 +17,7 @@
     <header class="navbar navbar--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="https://papanov-andry.ru/Best-Tour-Plan/" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -154,7 +154,9 @@
           <!-- /.hotel-info__text -->
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter"
+              >4.5/<span class="rating__counter-number">5</span></span
+            >
           </div>
           <!-- /.hotel-info__right -->
         </div>
@@ -224,7 +226,7 @@
             <!-- /.booking -->
             <div class="map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8543.298805697452!2d79.80057933385753!3d7.573632217273802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1600858071502!5m2!1sru!2sru"
+                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8543.298805697452!2d79.80057933385753!3d7.573632217273802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1600858071502!5m2!1sru!2sru"
                 height="213"
                 style="border: 0; width: 100%"
                 allowfullscreen=""
@@ -266,7 +268,8 @@
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
-            name="email"
+            name="email-newsletter"
+            
             required
           />
           <button class="subscribe__button">Send</button>
@@ -277,7 +280,7 @@
     <!-- /.newsletter -->
     <section class="reviews">
       <div class="cotainer">
-        <h2 class="section-title reviews__title">What people think about us</h2>
+        <h2 class="section-title reviews__title">What people think about&nbsp;us</h2>
         <div class="swiper-container reviews-slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -336,7 +339,7 @@
             data-aos="zoom-in-down"
             data-aos-duration="500"
           >
-            <img class="card__img" src="img/activity-1.jpg" alt="" />
+            <img class="card__img" src="#" data-src="img/activity-1.jpg" alt="" />
             <h3 class="card__title card__title--corner">
               The curious corner of chamarel
             </h3>
@@ -347,8 +350,10 @@
             data-aos="zoom-in-down"
             data-aos-delay="300"
           >
-            <img class="card__img" src="img/activity-2.jpg" alt="" />
-            <h3 class="card__title card__title--golf">Gymkhana club golf course</h3>
+            <img class="card__img" src="#" data-src="img/activity-2.jpg" alt="" />
+            <h3 class="card__title card__title--golf">
+              Gymkhana club golf course
+            </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div
@@ -356,7 +361,7 @@
             data-aos="zoom-in-down"
             data-aos-delay="300"
           >
-            <img class="card__img" src="img/activity-3.jpg" alt="" />
+            <img class="card__img" src="#" data-src="img/activity-3.jpg" alt="" />
             <h3 class="card__title card__title--trip">
               Tamarind falls hiking trip - full day
             </h3>
@@ -367,8 +372,10 @@
             data-aos="zoom-in-down"
             data-aos-duration="500"
           >
-            <img class="card__img" src="img/activity-4.jpg" alt="" />
-            <h3 class="card__title card__title--discovery">The blue marine discovery quest</h3>
+            <img class="card__img" src="#" data-src="img/activity-4.jpg" alt="" />
+            <h3 class="card__title card__title--discovery">
+              The blue marine discovery quest
+            </h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
         </div>
@@ -382,11 +389,14 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
+          <a href="#" class="logo footer__logo">
+            <img
+            src="#"
+            data-src="img/vertical-logo.svg"
             alt="vertical logo"
-            class="logo footer__logo"
+            
           />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -418,7 +428,9 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__list footer__additional">
-            <h3 class="footer__title footer__title--additional">ADDITIONAL INFORMATION</h3>
+            <h3 class="footer__title footer__title--additional">
+              ADDITIONAL INFORMATION
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us </a>
@@ -446,13 +458,13 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank"
                 ><img src="img/faceBook.svg" alt=""
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.instagram.com/" class="footer__link" target="_blank"
                 ><img src="img/youtube.svg" alt=""
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.youtube.com/" class="footer__link" target="_blank"
                 ><img src="img/instagram.svg" alt=""
               /></a>
             </div>
@@ -494,15 +506,15 @@
                 <div class="footer__icon-wrapper">
                   <img src="img/phone.svg" alt="" class="footer__icon" />
                 </div>
-                <p class="footer__item-text">Tel (business hours) : 269 1500
-Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)
-Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
+                <p class="footer__item-text">Tel (business hours) : <a href="tel:2691500" class="footer__number">269 1500</a> 
+Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="footer__number">52-56-61-38</a> (08:00 am – 20:00 pm) 
+Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__number">52-56-61-38</a> (08:00 am – 14:00 pm)</p>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img src="img/emale.svg" alt="" class="footer__icon" />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="footer__number">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>
@@ -525,6 +537,7 @@ Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
                   class="input footer__input form__phone"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="17"
                   required
                 />
               </div>
@@ -541,13 +554,13 @@ Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
         </div>
         <div class="footer__policy">
           <div class="footer__policy-text">
-            <span class="footer__disclaimer">Disclaimer</span>
-            <span class="footer__disclaimer"> Conditions of use </span>
-            <span class="footer__disclaimer">Cancellation policy</span>
+            <a href="#" class="footer__disclaimer"><span>Disclaimer</span></a>
+            <a href="#" class="footer__disclaimer"><span> Conditions of use </span></a>
+            <a href="#" class="footer__disclaimer"><span>Cancellation policy</span></a>
           </div>
           <!-- /.footer__policy-text -->
           <div class="footer__policy-icon">
-            <img src="img/sponsor.png" alt="" />
+            <img src="#" data-src="img/sponsor.png" alt="" />
           </div>
           <!-- /.policy-icon -->
         </div>
@@ -556,7 +569,9 @@ Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
     </footer>
 
     <div class="modal">
-      <div class="modal__overlay">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog-wrapper">
         <div class="modal__dialog">
           <a href="#" class="modal__clouse"
             ><img src="img/close.svg" alt=""
@@ -567,21 +582,22 @@ Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
               type="text"
               class="input modal__input"
               placeholder="Your Full Name*"
-              name="name"
+              name="name-booking"
               required
             />
             <input
               type="tel"
               class="input modal__input form__phone"
               placeholder="Phone Number*"
-              name="phone"
+              name="phone-booking"
+              minlength="17"
               required
             />
             <input
               type="email"
               class="subscribed modal__subscribed"
               placeholder="Email*"
-              name="email"
+              name="email-booking"
               required
             />
             <textarea
@@ -589,7 +605,7 @@ Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
               cols="30"
               rows="10"
               placeholder="Message"
-              name="message"
+              name="message-booking"
             ></textarea>
             <button class="button modal__button">Send</button>
             <span class="modal__info">* Required Fields</span>
@@ -597,16 +613,37 @@ Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
         </div>
         <!-- /.modal__dialog -->
       </div>
-      <!-- /.modal__overlay -->
     </div>
     <!-- /.modal -->
 
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.lazyloadxt.extra.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      jQuery.extend(jQuery.validator.messages, {
+        required: "This field is required.",
+        remote: "Please fix this field.",
+        email: "Please enter a valid email address.",
+        url: "Please enter a valid URL.",
+        date: "Please enter a valid date.",
+        dateISO: "Please enter a valid date (ISO).",
+        number: "Please enter a valid number.",
+        digits: "Please enter only digits.",
+        creditcard: "Please enter a valid credit card number.",
+        equalTo: "Please enter the same value again.",
+        accept: "Please enter a value with a valid extension.",
+        maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+        minlength: jQuery.validator.format("Please enter at least 11 characters."),
+        rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+        range: jQuery.validator.format("Please enter a value between {0} and {1}."),
+        max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
+        min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+      });
+    </script>
   </body>
 </html>

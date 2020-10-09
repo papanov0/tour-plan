@@ -31,8 +31,13 @@
   &__contact
     &-details
       grid-column: span 2
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160%
     &-form
       grid-column: span 2
+      position: relative
   &__title
     align-self: flex-end
     font-style: normal
@@ -49,7 +54,7 @@
       margin-bottom: 24px
       margin-top: 14px
     &--mb-4
-      margin-bottom: 36px
+      margin-bottom: 85px
   &__ul
     padding: 0
     margin: 0
@@ -63,7 +68,7 @@
     line-height: 160%
     color: $footer-text-color
     &--mb-2
-      margin-bottom: 20px
+      margin-bottom: 19px
     &-text
       margin-top: 0
       margin-bottom: 0
@@ -73,12 +78,24 @@
       min-width: 40px
   &__text
     color: $footer-text-color
-    margin-bottom: 28px
+    margin-bottom: 23px
   &__link
     text-decoration: none
     color: inherit
+    
   &__input
-    width: 100%
+    position: absolute
+    width: 260px
+    top: 57px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 10px
+    &::-webkit-input-placeholder
+      color: $footer-text-color
+    &::-moz-placeholder
+      color: $footer-text-color
     &-group
       margin-bottom: 15px
       flex-basis: 48%
@@ -86,6 +103,14 @@
     flex-basis: 100%
     margin-bottom: 23px
     min-height: 123px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    &::-webkit-input-placeholder
+      color: $footer-text-color
+    &::-moz-placeholder
+      color: $footer-text-color
   &__info
     font-style: normal
     font-weight: bold
@@ -96,10 +121,11 @@
     display: grid
     grid-template-columns: repeat(5, minmax(max-content, 1fr))
     margin-top: 95px
-
     &-text
+      display: flex
+      justify-content: center
       grid-row: 1
-      grid-column: 3 / 4
+      grid-column: 2 / 5
       font-style: normal
       font-weight: normal
       font-size: 12px
@@ -111,7 +137,16 @@
       justify-content: flex-end
       grid-row: 1
       grid-column: 5
+  &__disclaimer
+    margin-right: 9px
+    text-decoration: none
+    color: $light
+    
   &__legal
     display: flex
     flex-direction: column
     align-items: center
+  &__number
+    text-decoration: none
+    color: $footer-text-color
+    

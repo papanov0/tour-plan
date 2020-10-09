@@ -42,14 +42,14 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
-  }
+  };
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-  }
+  };
 
   var elements = $('.modal__overlay');
 
@@ -62,7 +62,7 @@ $(document).ready(function () {
             $(document).trigger(home);
             e.preventDefault();
             return false;
-        }
+        };
     });
   });
 
@@ -81,20 +81,26 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
-          required: "phone is must have"
+          required: "phone is must have",
+          phoneBooking: "Please enter at least 11 characters."
         },
       },
   });
   });
 
   $(document).ready(function(){
-    $('.form__phone').mask('+0(000) 000-00-00');
+    $('.form__phone').mask('+7(000) 000-00-00', {'translation': {9: {pattern: /[0-9*]/}}});
   });
+  
 
+  AOS.init();
   AOS.init({
     disable: function () {
       var maxWidth = 992;
       return window.innerWidth < maxWidth;
     }
   });
+  
+
+  
 });

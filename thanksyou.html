@@ -12,10 +12,10 @@
     />
   </head>
   <body>
-    <header class="navbar navbar__mobile--fixed">
+    <header class="navbar navbar--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="insex.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -88,14 +88,14 @@
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link"> All Deals </a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--visible">
               <a href="#" class="navbar-menu__link"> Hotels </a>
             </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link"> Activities </a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link"> Day </a>
+              <a href="#" class="navbar-menu__link"> Hotel Day Packages </a>
             </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link"> Restaurants </a>
@@ -104,7 +104,7 @@
               <a href="#" class="navbar-menu__link"> Events </a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link"> Rodrigues F</a>
+              <a href="#" class="navbar-menu__link"> Rodrigues </a>
             </li>
           </ul>
         </div>
@@ -134,11 +134,12 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
+              <h1 class="hotel-name hotel-info__name">Message sent!</h1>
             </div>
-            <p class="hotel-description hotel-info__description">
-              Наш оператор свяжется с вами в течение 5 минут
+            <p class=" hotel__thank">
+              Our operator will contact you within 5 minutes
             </p>
+            <a class="" href="index.html"><button class="button">Home</button></a>
           </div>
           <!-- /.hotel-info__text -->
         </div>
@@ -151,11 +152,14 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
+          <a href="index.html" class="logo footer__logo">
+            <img
+            src="#"
+            data-src="img/vertical-logo.svg"
             alt="vertical logo"
-            class="logo footer__logo"
+            
           />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -187,7 +191,9 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__list footer__additional">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+            <h3 class="footer__title footer__title--additional">
+              ADDITIONAL INFORMATION
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us </a>
@@ -216,21 +222,21 @@
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"
-                ><img src="img/faceBook.svg" alt=""
+                ><img src="#" data-src="img/faceBook.svg" alt=""
               /></a>
               <a href="#" class="footer__link"
-                ><img src="img/youtube.svg" alt=""
+                ><img src="#" data-src="img/youtube.svg" alt=""
               /></a>
               <a href="#" class="footer__link"
-                ><img src="img/instagram.svg" alt=""
+                ><img src="#" data-src="img/instagram.svg" alt=""
               /></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__title">LEGAL INFORMATION</h3>
-            <ul class="footer__ul">
+            <h3 class="footer__title footer__title--size">LEGAL INFORMATION</h3>
+            <ul class="footer__ul footer__ul--legal">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions</a>
               </li>
@@ -254,22 +260,22 @@
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="img/map-marker.svg" alt="" class="footer__icon" />
+                  <img src="#" data-src="img/map-marker.svg" alt="" class="footer__icon" />
                 </div>
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="img/phone.svg" alt="" class="footer__icon" />
+                  <img src="#" data-src="img/phone.svg" alt="" class="footer__icon" />
                 </div>
-                Tel (business hours) : 269 1500 Tel (hotline) Monday - Saturday:
-                52-56-61-38 (08:00 am – 20:00 pm) Tel (hotline) Sunday:
-                52-56-61-38 (08:00 am – 14:00 pm)
+                <p class="footer__item-text">Tel (business hours) : 269 1500 
+Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) 
+Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="img/emale.svg" alt="" class="footer__icon" />
+                  <img src="#" data-src="img/emale.svg" alt="" class="footer__icon" />
                 </div>
                 cherly.lawson@example.com
               </li>
@@ -277,24 +283,28 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
+            <form action="send.php" method="POST" class="form footer__form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input form__phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
-                class="footer__message"
-                cols="30"
-                rows="10"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -312,7 +322,7 @@
           </div>
           <!-- /.footer__policy-text -->
           <div class="footer__policy-icon">
-            <img src="img/sponsor.png" alt="" />
+            <img src="#" data-src="img/sponsor.png" alt="" />
           </div>
           <!-- /.policy-icon -->
         </div>
@@ -320,9 +330,13 @@
       </div>
     </footer>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.lazyloadxt.extra.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

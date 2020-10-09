@@ -15,8 +15,15 @@
     height: 230px
   .footer
     &__input
+      position: static
+      width: 100%
       &-group
         flex-basis: 100%
+    &__title
+      &--mb-4
+      margin-bottom: 34px
+      &--inline
+        margin-bottom: 0
 
 @media ( max-width: 992px )
   .container, .newsletter-wrapper
@@ -66,6 +73,8 @@
     &-title
       line-height: 23px
   .reviews
+    padding-right: 35px 
+    padding-left: 35px
     &__title
       font-size: 30px
       margin-bottom: 45px
@@ -73,9 +82,9 @@
       &__button
         transform: translateY(-50%)
         &--prev
-          left: 9%
+          left: 0
         &--next
-          right: 9%
+          right: 0
       &__item
         max-width: 580px
   .footer
@@ -85,11 +94,17 @@
       grid-row-gap: 45px
       grid-column-gap: 0
     &__title
+      margin-bottom: 19px
       &--additional
         margin-right: 19px
       &--mb-4
         line-height: 13px
+        margin-bottom: 41px;
+      &--inline
+        margin-bottom: 0
     &__input
+      top: 49px
+      margin-bottom: 0
       &-group
         flex-basis: 48%
     &__logo
@@ -129,9 +144,12 @@
     &__policy
       display: flex
       justify-content: space-between
-      margin-top: 56px
+      margin-top: 60px
     &__disclaimer
       margin-right: 11px
+    &__icon
+      &-wrapper
+        margin-left: 8px
 
   .parallax-window
     background-image: url(../img/newsletter-bg.jpg)
@@ -140,7 +158,7 @@
     background-size: cover
     min-height: 200px
   .activities
-    padding-top: 102px
+    padding-top: 99px
     padding-bottom: 48px
     &-wrapper
       flex-wrap: wrap
@@ -157,14 +175,17 @@
   .modal
     &__dialog
       padding: 20px 50px
+  .invalid
+    padding-top: 7px
 
-@media ( max-width: 768px )
+@media ( max-width: 767px )
   .container
     max-width: 576px
     width: 92%
   body
     padding-top: 78px
   .navbar
+    
     &--fixed
       position: fixed
       left: 0
@@ -197,8 +218,11 @@
       padding-top: 30px
       &--visible
         display: block
+        overflow: auto
     &-menu
       flex-direction: column
+      height: 450px
+      
       &__item
         margin-bottom: 20px
         &--mobile
@@ -285,8 +309,13 @@
     height: 255px
   .footer
     &__input
+      position: static
+      margin-bottom: 0
+      width: 100%
+      
       &-group
         flex-basis: 100%
+        width: 100%
     &__title
       &--additional
         margin-right: 15px
@@ -294,6 +323,8 @@
       &--size
         margin-right: 0
         margin-left: 10px
+      &--mb-4
+        margin-bottom: 34px
   .modal
     &__dialog
       padding: 15px 20px
@@ -305,6 +336,9 @@
     &__info
       margin-bottom: 15px
       margin-top: 15px
+  .invalid
+    padding-top: 0
+    
 
 @media ( max-width: 610px )
   .footer
@@ -339,13 +373,14 @@
         font-size: 30px
         line-height: 38px
   .reviews
-    padding: 40px 20px 0
+    padding: 38px 20px 0
     &-slider
       &__item
 
         padding: 0 0 10px 0
       &__text
         width: 90%
+        text-align: left
     &__title
       font-size: 18px
       line-height: 23px
@@ -417,7 +452,7 @@
       &--inline
         margin-bottom: 30px
     &__disclaimer
-      margin-right: 5px
+      margin-right: 8px
     &__policy
       flex-wrap: wrap
       margin-top: 30px
@@ -428,17 +463,37 @@
       margin-bottom: 5px
       margin-top: 10px
 
-@media ( max-width: 320px )
+@media ( max-width: 460px )
+  .hotel
+    &-slider
+      height: 179px
+      &__button
+        width: 5px
+        height: 10px
+  .footer
+    &__icon
+      &-wrapper
+        min-width: 32px
+        margin-left: 0
+
+@media ( max-width: 500px )
+  .container
+    max-width: 88%
   .menu
     &-button
       margin-right: 12px
   .navbar
+    &-button
+      &--visible
+        top: 71px
     &-menu
       padding-top: 0
       &__item
         &--visible
           margin-bottom: 10px
-        
+    &-top
+      padding-top: 24px
+      min-width: 293px
     &__user
       &--mobile
         &--visible
@@ -448,6 +503,9 @@
         &--visible
           width: 243px
           margin-bottom: 15px
+  .breadcrumb
+    &-list
+      padding-top: 12px
   .hotel
     padding-top: 0
     padding-bottom: 0
@@ -461,7 +519,8 @@
       max-width: 234px
     &-slider
       height: 179px
-      width: 95%
+      width: 100%
+      margin: 0 auto 20px auto
       &__button
         width: 12px
         height: 12px
@@ -472,9 +531,9 @@
   .stars
     margin-right: 19px
   .booking
-    width: 96%
+    width: 100%
     height: 210px
-    margin-bottom: 19px
+    margin: 0 auto 19px auto
     &__num
       margin-left: 6px
       margin-right: 5px
@@ -485,8 +544,9 @@
         margin-top: 8px
         margin-bottom: 17px
   .map
-    width: 96%
+    width: 100%
     height: 173px
+    margin: 0 auto 0 auto
   .newsletter
     &-wrapper
       justify-content: flex-start
@@ -507,16 +567,18 @@
       &__profile
         margin-right: 5px
       &__item
-        padding: 0 29px 36px 15px
+        padding: 0 29px 36px 33px
       &__text
-        width: 94%
+        width: 100%
+        margin-left: 0
+        margin-right: 0
       &__username
         margin-bottom: 7px
       &__button
         &--next
-          margin-right: -55px
+          margin-right: -61px
         &--prev
-          margin-left: -71px
+          margin-left: -65px
   .activities
     padding-top: 77px
     padding-bottom: 39px
@@ -528,28 +590,38 @@
       margin-bottom: 22px
 
   .card
-    width: 96%
+    width: 100%
     &__title
       &--golf
-        margin-bottom: 10px
+        margin-bottom: 14px
   .footer
     &-wrapper
       grid-row-gap: 36px
     &__title
       line-height: 17px
+      margin-bottom: 18px
       &--inline
         margin-bottom: 25px
       &--mb-3
         margin-top: 0
         line-height: 23px
-        margin-bottom: 30px
+        margin-bottom: 22px
       &--mb-4
-        line-height: 29px
-        margin-bottom: 14px
-    &__input
-      width: 96%
+        line-height: 37px
+        margin-bottom: 9px
+      &--size
+        margin-bottom: 10px
+      &--additional
+        margin-bottom: 20px
+    &__info
+      margin-bottom: 15px
+    &__item
+      &--mb-2
+        margin-bottom: 20px
+    &__text
+      margin-bottom: 26px
+
     &__message
-      width: 96%
       margin-bottom: 13px
     &__policy-text
       margin-bottom: 8px
@@ -559,3 +631,47 @@
       margin-top: 5px
     &__button
       margin-top: 5px
+
+
+
+@media ( min-width: 992px )
+  .search
+    &__button
+      &:hover
+        background-color: rgba(#f5788f, 0.8)
+  .user
+    &__name
+      &:hover
+        color: $primary
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          color: $primary
+  .button
+    &:hover
+      background-color: rgba(#f5788f, 0.8)
+  .subscribe
+    &__button 
+      &:hover
+        background-color: rgba(#f5788f, 0.8)
+  .card
+    &__button
+      &:hover
+        background-color: rgba(#f5788f, 0.8)
+  .footer
+    &__disclaimer
+      &:hover
+        color: $primary
+    &__number
+      &:hover
+        color: $primary
+    &__link
+      &:hover
+        color: $primary
+
+
+@media ( max-height: 495px )
+  .modal
+    &__dialog
+      height: 95%
